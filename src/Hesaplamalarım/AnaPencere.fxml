@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Hesaplamalarım.Controller">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox maxWidth="-Infinity">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="40.0" text="3.dklık">
+                     <HBox.margin>
+                        <Insets left="10.0" top="9.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="txt3dk" promptText="Değer Giriniz" unFocusColor="#a11515">
+                     <HBox.margin>
+                        <Insets left="30.0" top="1.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox maxWidth="-Infinity">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="40.0" text="5.dklık">
+                     <HBox.margin>
+                        <Insets left="10.0" top="9.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="txt5dk" promptText="Değer Giriniz" unFocusColor="#a11515">
+                     <HBox.margin>
+                        <Insets left="30.0" top="1.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox maxWidth="-Infinity">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="49.0" text="1 saatlik">
+                     <HBox.margin>
+                        <Insets left="10.0" top="9.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="txt1sa" promptText="Değer Giriniz" unFocusColor="#a11515">
+                     <HBox.margin>
+                        <Insets left="21.0" top="1.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox maxWidth="-Infinity">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="50.0" text="2 saatlik">
+                     <HBox.margin>
+                        <Insets left="10.0" top="9.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="txt2sa" promptText="Değer Giriniz" unFocusColor="#a11515">
+                     <HBox.margin>
+                        <Insets left="21.0" top="1.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox maxWidth="-Infinity">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="49.0" text="4 saatlik">
+                     <HBox.margin>
+                        <Insets left="10.0" top="9.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="txt4sa" promptText="Değer Giriniz" unFocusColor="#a11515">
+                     <HBox.margin>
+                        <Insets left="21.0" top="1.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox maxWidth="-Infinity" prefHeight="26.0" prefWidth="221.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="56.0" text="12 saatlik">
+                     <HBox.margin>
+                        <Insets left="10.0" top="9.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="txt12sa" maxWidth="-Infinity" promptText="Değer Giriniz" unFocusColor="#a11515">
+                     <HBox.margin>
+                        <Insets left="15.0" top="1.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox maxWidth="-Infinity" prefHeight="26.0" prefWidth="219.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="52.0" text="1 Günlük">
+                     <HBox.margin>
+                        <Insets left="10.0" top="9.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="txt1g" promptText="Değer Giriniz" unFocusColor="#a11515">
+                     <HBox.margin>
+                        <Insets left="19.0" top="1.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox maxWidth="-Infinity" prefHeight="26.0" prefWidth="219.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="50.0" text="3 Günlük">
+                     <HBox.margin>
+                        <Insets left="10.0" top="9.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXTextField fx:id="txt3g" promptText="Değer Giriniz" unFocusColor="#a11515">
+                     <HBox.margin>
+                        <Insets left="20.0" top="1.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <Pane prefHeight="186.0" prefWidth="400.0">
+               <children>
+                  <JFXButton layoutX="67.0" layoutY="14.0" onAction="#Hesapla" prefHeight="65.0" prefWidth="119.0" text="Hesapla">
+                     <ripplerFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#334da8" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </ripplerFill>
+                  </JFXButton>
+                  <JFXButton layoutX="67.0" layoutY="79.0" onAction="#Sil" prefHeight="65.0" prefWidth="119.0" text="Temizle">
+                     <ripplerFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#334da8" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </ripplerFill>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <ListView fx:id="kayıtMekanı" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="400.0" prefWidth="193.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="43.0" prefWidth="193.0" text="Toplam Dakika">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbldk" alignment="CENTER" prefHeight="43.0" prefWidth="193.0" text="0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="43.0" prefWidth="193.0" text="Toplam Saat">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblsaat" alignment="CENTER" prefHeight="43.0" prefWidth="193.0" text="0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="43.0" prefWidth="193.0" text="Toplam Gün">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblgun" alignment="CENTER" prefHeight="43.0" prefWidth="193.0" text="0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="139.0" prefWidth="193.0">
+               <children>
+                  <JFXButton layoutX="61.0" layoutY="14.0" onAction="#Kaydet" prefHeight="39.0" prefWidth="71.0" text="Kaydet">
+                     <ripplerFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#334da8" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </ripplerFill>
+                  </JFXButton>
+                  <JFXButton layoutX="61.0" layoutY="61.0" onAction="#silinecekVeri" prefHeight="39.0" prefWidth="71.0" text="Sil">
+                     <ripplerFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#334da8" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </ripplerFill>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>
